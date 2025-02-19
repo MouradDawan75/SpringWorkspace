@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "530702e2-acd0-439d-acfa-f67812268ced",
+		"name": "Formation Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24229385"
+	},
+	"item": [
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/C:/Users/oem/Downloads/hp.jpg",
+								"/C:/Users/oem/Downloads/hp2.jpg"
+							]
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp2.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":2, \"description\": \"new ecran hp\", \"price\": 200, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/1/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"1",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Location From Extern API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/categories/1/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"categories",
+						"1",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/55",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/oem/Downloads/hp.jpg"
+						},
+						{
+							"key": "productString",
+							"value": "{\"id\":0, \"description\": \"ecran hp\", \"price\": 99, \"version\": 0, \"imagePath\": \"\", \"categoryId\": 1}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/products/image/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"products",
+						"image",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 0,\r\n        \"version\": 0,\r\n        \"name\": \"High Tech\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/categories/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"categories",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Supplier",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 0,\r\n        \"version\": 0,\r\n        \"name\": \"Carrefour\",\r\n        \"productsIds\": [1,3]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/suppliers/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"suppliers",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Supplier",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/suppliers/1/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"suppliers",
+						"1",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

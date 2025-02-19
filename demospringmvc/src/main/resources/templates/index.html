@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+<h3>Page d'accueil</h3>
+<br/><br/>
+<p>
+    Thymeleaf est un moteur de templates (moteur de rendu de document) écrit en Java. Il permet d'intégrer du
+    Javascript et CSS (voir n'importe quel format de texte).
+
+    Il existe d'autres moteurs de vue: JSP (inclus dans Java EE), FreeMaker, Velocity....
+    Thymeleaf est le moteur le plus récent et est devenu le générateur utilisé par Spring par défaut.
+</p>
+<p>
+    Par défaut, les templates HTML doivent être placées dans le répertoire src/main/resources/templates de votre projet.
+    Les fichiers statiques (non transfomés par Thymeleaf) doivent être: Javascript, CSS, images..) placés dans le répertoire src/main/resources/static
+</p>
+<p>
+    Thymeleaf utilise attributs insérés dans les tags HTML pour générer du contenu dynamique.
+    Le contenu de ces attributs peut être du cimple texte ou une expression qui sera interprétée par le moteur à l'exécution.
+</p>
+<p>
+    Les expressions sont délimitées par:<br/>
+    ${..}: pour les expressions à evaluer<br/>
+    *{..}: pour les expressions de selection<br/>
+    #{..}: pour les expressions de messages<br/>
+    @{..}: pour les expressions d'URL<br/>
+    ~{..}: pour les expressions de fragments<br/>
+</p>
+<a href="/thymeleaf">Thymeleaf attributs</a>
+</body>
+</html>

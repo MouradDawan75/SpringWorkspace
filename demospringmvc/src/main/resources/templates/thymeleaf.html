@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h2>Attributs Thymeleaf</h2>
+<br/>
+<p>Contenu du controller: <strong th:text="${message}"></strong></p>
+<br/>
+<h3>Expressions à évaluer</h3>
+<br/>
+<div>
+   Name: <span th:text="${player.name}"></span>
+    Rôle: <span th:text="${player.role}"></span>
+</div>
+<br/>
+<h3>Expressions de sélection</h3>
+<br/>
+<h4>Player détails:</h4>
+<div th:object="${player}">
+ <p>Name: <span th:text="*{name}"></span></p>
+    <p>Rôle: <span th:text="*{role}"></span></p>
+</div>
+<br/>
+<h3>Expressions d'URL</h3>
+<br/>
+<a th:href="@{/}">revenir à l'accueil</a>
+</body>
+</html>

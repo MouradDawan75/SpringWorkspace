@@ -1,0 +1,419 @@
+2025-02-17 16:11:40.767 INFO  2207  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 3096 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:11:40.782 INFO  2222  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:11:43.729 INFO  5169  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:11:43.771 INFO  5211  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:11:43.772 INFO  5212  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:11:43.925 INFO  5365  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:11:43.926 INFO  5366  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2960 ms
+2025-02-17 16:11:44.523 INFO  5963  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:11:44.723 DEBUG 6163  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:11:44.817 DEBUG 6257  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:11:44.893 DEBUG 6333  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:11:45.003 DEBUG 6443  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:11:45.288 INFO  6728  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:11:45.329 INFO  6769  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.702 seconds (process running for 7.183)
+2025-02-17 16:12:03.558 INFO  24998 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:12:03.559 INFO  24999 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:12:03.560 DEBUG 25000 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:12:03.561 DEBUG 25001 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:12:03.561 DEBUG 25001 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:12:03.563 DEBUG 25003 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@688f9022
+2025-02-17 16:12:03.564 DEBUG 25004 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@51840db5
+2025-02-17 16:12:03.564 DEBUG 25004 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:12:03.565 INFO  25005 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2025-02-17 16:12:03.585 DEBUG 25025 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui.html", parameters={}
+2025-02-17 16:12:03.608 DEBUG 25048 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-02-17 16:12:03.813 DEBUG 25253 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-17 16:12:03.816 DEBUG 25256 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Nothing to write: null body
+2025-02-17 16:12:03.820 DEBUG 25260 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 302 FOUND
+2025-02-17 16:12:03.832 DEBUG 25272 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.html", parameters={}
+2025-02-17 16:12:03.845 DEBUG 25285 --- [http-nio-8085-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.854 DEBUG 25294 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:12:03.931 DEBUG 25371 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.css", parameters={}
+2025-02-17 16:12:03.932 DEBUG 25372 --- [http-nio-8085-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.932 DEBUG 25372 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-17 16:12:03.934 DEBUG 25374 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.935 DEBUG 25375 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-02-17 16:12:03.931 DEBUG 25371 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-02-17 16:12:03.938 DEBUG 25378 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-02-17 16:12:03.939 DEBUG 25379 --- [http-nio-8085-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.940 DEBUG 25380 --- [http-nio-8085-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.940 DEBUG 25380 --- [http-nio-8085-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:03.942 DEBUG 25382 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:12:03.943 DEBUG 25383 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:12:03.967 DEBUG 25407 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:03.975 DEBUG 25415 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:04.050 DEBUG 25490 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:04.314 DEBUG 25754 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/favicon-16x16.png", parameters={}
+2025-02-17 16:12:04.316 DEBUG 25756 --- [http-nio-8085-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:12:04.322 DEBUG 25762 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:04.355 DEBUG 25795 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet : GET "/api-docs/swagger-config", parameters={}
+2025-02-17 16:12:04.357 DEBUG 25797 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-17 16:12:04.362 DEBUG 25802 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-17 16:12:04.392 DEBUG 25832 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8085/swagger-ui/oauth2-redir (truncated)...]
+2025-02-17 16:12:04.407 DEBUG 25847 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:04.424 DEBUG 25864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet : GET "/api-docs", parameters={}
+2025-02-17 16:12:04.427 DEBUG 25867 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-17 16:12:05.225 INFO  26665 --- [http-nio-8085-exec-10] o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 777 ms
+2025-02-17 16:12:05.332 DEBUG 26772 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-17 16:12:05.337 DEBUG 26777 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-17 16:12:05.340 DEBUG 26780 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:09.306 INFO  30746 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:12:09.326 INFO  30766 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:12:21.051 INFO  1760  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 3668 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:12:21.057 INFO  1766  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "prod"
+2025-02-17 16:12:23.492 INFO  4201  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8082 (http)
+2025-02-17 16:12:23.525 INFO  4234  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:12:23.526 INFO  4235  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:12:23.654 INFO  4363  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:12:23.655 INFO  4364  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2467 ms
+2025-02-17 16:12:24.038 INFO  4747  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:12:24.216 DEBUG 4925  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:12:24.303 DEBUG 5012  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-17 16:12:24.366 DEBUG 5075  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:12:24.449 DEBUG 5158  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:12:24.731 INFO  5440  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8082 (http) with context path '/'
+2025-02-17 16:12:24.755 INFO  5464  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 4.602 seconds (process running for 5.872)
+2025-02-17 16:12:35.225 INFO  15934 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:12:35.226 INFO  15935 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:12:35.228 DEBUG 15937 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:12:35.228 DEBUG 15937 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:12:35.228 DEBUG 15937 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:12:35.237 DEBUG 15946 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@728506df
+2025-02-17 16:12:35.238 DEBUG 15947 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2bd591ab
+2025-02-17 16:12:35.239 DEBUG 15948 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:12:35.240 INFO  15949 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 11 ms
+2025-02-17 16:12:35.270 DEBUG 15979 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.html", parameters={}
+2025-02-17 16:12:35.299 DEBUG 16008 --- [http-nio-8082-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-17 16:12:35.326 DEBUG 16035 --- [http-nio-8082-exec-1] o.s.w.s.r.ResourceHttpRequestHandler : Resource not found
+2025-02-17 16:12:35.336 DEBUG 16045 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleException(Exception, WebRequest)
+2025-02-17 16:12:35.502 DEBUG 16211 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/problem+json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/problem+json]
+2025-02-17 16:12:35.518 DEBUG 16227 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [ProblemDetail[type='about:blank', title='Not Found', status=404, detail='No static resource swagger- (truncated)...]
+2025-02-17 16:12:35.555 DEBUG 16264 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-02-17 16:12:35.561 DEBUG 16270 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-17 16:12:35.604 DEBUG 16313 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet : GET "/favicon.ico", parameters={}
+2025-02-17 16:12:35.606 DEBUG 16315 --- [http-nio-8082-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-17 16:12:35.608 DEBUG 16317 --- [http-nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler : Resource not found
+2025-02-17 16:12:35.609 DEBUG 16318 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleException(Exception, WebRequest)
+2025-02-17 16:12:35.610 DEBUG 16319 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/problem+json;q=0.5', given [image/avif, image/webp, image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5] and supported [application/problem+json]
+2025-02-17 16:12:35.611 DEBUG 16320 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [ProblemDetail[type='about:blank', title='Not Found', status=404, detail='No static resource favicon. (truncated)...]
+2025-02-17 16:12:35.638 DEBUG 16347 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-17 16:12:35.639 DEBUG 16348 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-17 16:12:42.285 DEBUG 22994 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui.html", parameters={}
+2025-02-17 16:12:42.288 DEBUG 22997 --- [http-nio-8082-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-17 16:12:42.290 DEBUG 22999 --- [http-nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler : Resource not found
+2025-02-17 16:12:42.292 DEBUG 23001 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleException(Exception, WebRequest)
+2025-02-17 16:12:42.293 DEBUG 23002 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/problem+json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/problem+json]
+2025-02-17 16:12:42.294 DEBUG 23003 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [ProblemDetail[type='about:blank', title='Not Found', status=404, detail='No static resource swagger- (truncated)...]
+2025-02-17 16:12:42.297 DEBUG 23006 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2025-02-17 16:12:42.297 DEBUG 23006 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-17 16:12:42.330 DEBUG 23039 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet : GET "/favicon.ico", parameters={}
+2025-02-17 16:12:42.333 DEBUG 23042 --- [http-nio-8082-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-17 16:12:42.336 DEBUG 23045 --- [http-nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler : Resource not found
+2025-02-17 16:12:42.338 DEBUG 23047 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleException(Exception, WebRequest)
+2025-02-17 16:12:42.339 DEBUG 23048 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/problem+json;q=0.5', given [image/avif, image/webp, image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5] and supported [application/problem+json]
+2025-02-17 16:12:42.339 DEBUG 23048 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [ProblemDetail[type='about:blank', title='Not Found', status=404, detail='No static resource favicon. (truncated)...]
+2025-02-17 16:12:42.342 DEBUG 23051 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-17 16:12:42.342 DEBUG 23051 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-17 16:12:52.454 DEBUG 33163 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet : GET "/prod/api-docs", parameters={}
+2025-02-17 16:12:52.457 DEBUG 33166 --- [http-nio-8082-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-17 16:12:53.047 INFO  33756 --- [http-nio-8082-exec-5] o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 544 ms
+2025-02-17 16:12:53.154 DEBUG 33863 --- [http-nio-8082-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json]
+2025-02-17 16:12:53.157 DEBUG 33866 --- [http-nio-8082-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-17 16:12:53.162 DEBUG 33871 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:12:53.194 DEBUG 33903 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet : GET "/favicon.ico", parameters={}
+2025-02-17 16:12:53.197 DEBUG 33906 --- [http-nio-8082-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-17 16:12:53.201 DEBUG 33910 --- [http-nio-8082-exec-6] o.s.w.s.r.ResourceHttpRequestHandler : Resource not found
+2025-02-17 16:12:53.202 DEBUG 33911 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleException(Exception, WebRequest)
+2025-02-17 16:12:53.202 DEBUG 33911 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/problem+json;q=0.5', given [image/avif, image/webp, image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5] and supported [application/problem+json]
+2025-02-17 16:12:53.203 DEBUG 33912 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [ProblemDetail[type='about:blank', title='Not Found', status=404, detail='No static resource favicon. (truncated)...]
+2025-02-17 16:12:53.205 DEBUG 33914 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-17 16:12:53.206 DEBUG 33915 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-17 16:13:27.678 INFO  68387 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:13:27.709 INFO  68418 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:17:08.545 INFO  1931  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 7136 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:17:08.552 INFO  1938  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:17:11.136 INFO  4522  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:17:11.166 INFO  4552  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:17:11.167 INFO  4553  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:17:11.309 INFO  4695  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:17:11.310 INFO  4696  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2575 ms
+2025-02-17 16:17:11.944 INFO  5330  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:17:12.125 DEBUG 5511  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:17:12.207 DEBUG 5593  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:17:12.272 DEBUG 5658  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:17:12.369 DEBUG 5755  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:17:12.590 INFO  5976  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:17:12.614 INFO  6000  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.075 seconds (process running for 6.452)
+2025-02-17 16:19:31.715 INFO  145101 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:19:31.715 INFO  145101 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:19:31.716 DEBUG 145102 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:19:31.716 DEBUG 145102 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:19:31.717 DEBUG 145103 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:19:31.719 DEBUG 145105 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a47d567
+2025-02-17 16:19:31.721 DEBUG 145107 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4718170e
+2025-02-17 16:19:31.722 DEBUG 145108 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:19:31.722 INFO  145108 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2025-02-17 16:19:31.738 DEBUG 145124 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui.html", parameters={}
+2025-02-17 16:19:31.772 DEBUG 145158 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-02-17 16:19:31.974 DEBUG 145360 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-17 16:19:31.983 DEBUG 145369 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Nothing to write: null body
+2025-02-17 16:19:31.985 DEBUG 145371 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 302 FOUND
+2025-02-17 16:19:32.002 DEBUG 145388 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.html", parameters={}
+2025-02-17 16:19:32.009 DEBUG 145395 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.024 DEBUG 145410 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:19:32.064 DEBUG 145450 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-17 16:19:32.065 DEBUG 145451 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-02-17 16:19:32.066 DEBUG 145452 --- [http-nio-8085-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.067 DEBUG 145453 --- [http-nio-8085-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.069 DEBUG 145455 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.css", parameters={}
+2025-02-17 16:19:32.071 DEBUG 145457 --- [http-nio-8085-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.071 DEBUG 145457 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-02-17 16:19:32.073 DEBUG 145459 --- [http-nio-8085-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.073 DEBUG 145459 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-02-17 16:19:32.074 DEBUG 145460 --- [http-nio-8085-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.086 DEBUG 145472 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:19:32.088 DEBUG 145474 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:19:32.089 DEBUG 145475 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:19:32.094 DEBUG 145480 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:19:32.161 DEBUG 145547 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:19:32.420 DEBUG 145806 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/favicon-16x16.png", parameters={}
+2025-02-17 16:19:32.423 DEBUG 145809 --- [http-nio-8085-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:19:32.427 DEBUG 145813 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:19:32.458 DEBUG 145844 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/api-docs/swagger-config", parameters={}
+2025-02-17 16:19:32.459 DEBUG 145845 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-17 16:19:32.463 DEBUG 145849 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-17 16:19:32.493 DEBUG 145879 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8085/swagger-ui/oauth2-redir (truncated)...]
+2025-02-17 16:19:32.507 DEBUG 145893 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:19:32.521 DEBUG 145907 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : GET "/api-docs", parameters={}
+2025-02-17 16:19:32.521 DEBUG 145907 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-17 16:19:33.214 INFO  146600 --- [http-nio-8085-exec-1] o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 667 ms
+2025-02-17 16:19:33.338 DEBUG 146724 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-17 16:19:33.342 DEBUG 146728 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-17 16:19:33.344 DEBUG 146730 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:29:04.239 INFO  717625 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:29:04.263 INFO  717649 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:29:10.630 INFO  1718  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 9424 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:29:10.640 INFO  1728  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:29:13.377 INFO  4465  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:29:13.404 INFO  4492  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:29:13.405 INFO  4493  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:29:13.544 INFO  4632  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:29:13.545 INFO  4633  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2758 ms
+2025-02-17 16:29:14.078 INFO  5166  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:29:14.599 DEBUG 5687  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:29:14.703 DEBUG 5791  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:29:14.833 DEBUG 5921  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:29:14.930 DEBUG 6018  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:29:15.244 INFO  6332  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:29:15.390 INFO  6478  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.625 seconds (process running for 6.918)
+2025-02-17 16:29:23.515 INFO  14603 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:29:23.517 INFO  14605 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:29:23.518 DEBUG 14606 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:29:23.518 DEBUG 14606 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:29:23.518 DEBUG 14606 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:29:23.520 DEBUG 14608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@40f956b6
+2025-02-17 16:29:23.521 DEBUG 14609 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@156d0bf1
+2025-02-17 16:29:23.522 DEBUG 14610 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:29:23.523 INFO  14611 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2025-02-17 16:29:23.541 DEBUG 14629 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.html", parameters={}
+2025-02-17 16:29:23.572 DEBUG 14660 --- [http-nio-8085-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.662 DEBUG 14750 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:29:23.735 DEBUG 14823 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-02-17 16:29:23.738 DEBUG 14826 --- [http-nio-8085-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.740 DEBUG 14828 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:29:23.745 DEBUG 14833 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.css", parameters={}
+2025-02-17 16:29:23.747 DEBUG 14835 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.750 DEBUG 14838 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:29:23.746 DEBUG 14834 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-17 16:29:23.754 DEBUG 14842 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-02-17 16:29:23.755 DEBUG 14843 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.758 DEBUG 14846 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:29:23.767 DEBUG 14855 --- [http-nio-8085-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.768 DEBUG 14856 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-02-17 16:29:23.770 DEBUG 14858 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:29:23.772 DEBUG 14860 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:29:23.957 DEBUG 15045 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:29:24.163 DEBUG 15251 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : GET "/api-docs/swagger-config", parameters={}
+2025-02-17 16:29:24.167 DEBUG 15255 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-17 16:29:24.222 DEBUG 15310 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-17 16:29:24.264 DEBUG 15352 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8085/swagger-ui/oauth2-redir (truncated)...]
+2025-02-17 16:29:24.278 DEBUG 15366 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:29:24.288 DEBUG 15376 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/api-docs", parameters={}
+2025-02-17 16:29:24.292 DEBUG 15380 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-17 16:29:24.999 INFO  16087 --- [http-nio-8085-exec-8] o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 681 ms
+2025-02-17 16:29:25.086 DEBUG 16174 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-17 16:29:25.089 DEBUG 16177 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-17 16:29:25.094 DEBUG 16182 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:29:48.907 INFO  39995 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:29:48.924 INFO  40012 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:29:55.170 INFO  1896  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 1888 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:29:55.195 INFO  1921  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:29:57.642 INFO  4368  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:29:57.665 INFO  4391  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:29:57.666 INFO  4392  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:29:57.781 INFO  4507  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:29:57.782 INFO  4508  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2403 ms
+2025-02-17 16:29:58.291 INFO  5017  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:29:58.440 DEBUG 5166  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:29:58.513 DEBUG 5239  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:29:58.566 DEBUG 5292  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:29:58.648 DEBUG 5374  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:29:58.936 INFO  5662  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:29:58.965 INFO  5691  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 4.713 seconds (process running for 6.136)
+2025-02-17 16:30:03.854 INFO  10580 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:30:03.855 INFO  10581 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:30:03.856 DEBUG 10582 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:30:03.857 DEBUG 10583 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:30:03.858 DEBUG 10584 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:30:03.861 DEBUG 10587 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@40f956b6
+2025-02-17 16:30:03.862 DEBUG 10588 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@156d0bf1
+2025-02-17 16:30:03.863 DEBUG 10589 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:30:03.864 INFO  10590 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2025-02-17 16:30:03.889 DEBUG 10615 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/index.html", parameters={}
+2025-02-17 16:30:03.905 DEBUG 10631 --- [http-nio-8085-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:30:03.992 DEBUG 10718 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed 304 NOT_MODIFIED
+2025-02-17 16:30:04.058 DEBUG 10784 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-17 16:30:04.060 DEBUG 10786 --- [http-nio-8085-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-17 16:30:04.256 DEBUG 10982 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:30:04.336 DEBUG 11062 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/api-docs/swagger-config", parameters={}
+2025-02-17 16:30:04.341 DEBUG 11067 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-17 16:30:04.386 DEBUG 11112 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-17 16:30:04.445 DEBUG 11171 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8085/swagger-ui/oauth2-redir (truncated)...]
+2025-02-17 16:30:04.464 DEBUG 11190 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:30:04.487 DEBUG 11213 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/api-docs", parameters={}
+2025-02-17 16:30:04.491 DEBUG 11217 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-17 16:30:05.226 INFO  11952 --- [http-nio-8085-exec-4] o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 703 ms
+2025-02-17 16:30:05.321 DEBUG 12047 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-17 16:30:05.324 DEBUG 12050 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-17 16:30:05.327 DEBUG 12053 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:32:36.067 INFO  162793 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:32:36.083 INFO  162809 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:48:27.905 INFO  1898  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 1492 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:48:27.914 INFO  1907  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:48:30.935 INFO  4928  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:48:30.974 INFO  4967  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:48:30.975 INFO  4968  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:48:31.102 INFO  5095  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:48:31.103 INFO  5096  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3069 ms
+2025-02-17 16:48:31.803 INFO  5796  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:48:31.946 DEBUG 5939  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 17 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:48:32.015 DEBUG 6008  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:48:32.080 DEBUG 6073  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:48:32.315 DEBUG 6308  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:48:32.654 INFO  6647  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:48:32.686 INFO  6679  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.739 seconds (process running for 7.094)
+2025-02-17 16:49:54.292 INFO  88285 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:49:54.293 INFO  88286 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:49:54.294 DEBUG 88287 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:49:54.295 DEBUG 88288 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:49:54.296 DEBUG 88289 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:49:54.300 DEBUG 88293 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c17f0a1
+2025-02-17 16:49:54.302 DEBUG 88295 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@526de64a
+2025-02-17 16:49:54.303 DEBUG 88296 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:49:54.304 INFO  88297 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 10 ms
+2025-02-17 16:49:54.322 DEBUG 88315 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : POST "/upload-image/5", parameters={multipart}
+2025-02-17 16:49:54.418 DEBUG 88411 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.UploadDownloadController#uploadImage(long, MultipartFile)
+2025-02-17 16:49:54.484 DEBUG 88477 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleGenericException(Exception, WebRequest)
+2025-02-17 16:49:54.497 ERROR 88490 --- [http-nio-8085-exec-2] f.d.d.i.MyGlobalExceptionHandler : storage.folder\5-dell.jpg (Le chemin d’accès spécifié est introuvable)
+2025-02-17 16:49:54.664 DEBUG 88657 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-02-17 16:49:54.668 DEBUG 88661 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.LogDto@27f26824]
+2025-02-17 16:49:54.713 DEBUG 88706 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.io.FileNotFoundException: storage.folder\5-dell.jpg (Le chemin d’accès spécifié est introuvable)]
+2025-02-17 16:49:54.725 DEBUG 88718 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-17 16:50:19.268 INFO  113261 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:50:19.288 INFO  113281 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:50:43.438 INFO  1784  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 8204 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:50:43.455 INFO  1801  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:50:46.137 INFO  4483  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:50:46.165 INFO  4511  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:50:46.166 INFO  4512  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:50:46.311 INFO  4657  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:50:46.312 INFO  4658  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2740 ms
+2025-02-17 16:50:46.904 INFO  5250  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:50:47.060 DEBUG 5406  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 17 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:50:47.133 DEBUG 5479  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:50:47.186 DEBUG 5532  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:50:47.273 DEBUG 5619  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:50:47.531 INFO  5877  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:50:47.561 INFO  5907  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.04 seconds (process running for 6.346)
+2025-02-17 16:50:53.229 INFO  11575 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:50:53.231 INFO  11577 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:50:53.235 DEBUG 11581 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:50:53.235 DEBUG 11581 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:50:53.238 DEBUG 11584 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:50:53.247 DEBUG 11593 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4b6b4f70
+2025-02-17 16:50:53.254 DEBUG 11600 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f328647
+2025-02-17 16:50:53.257 DEBUG 11603 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:50:53.261 INFO  11607 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 28 ms
+2025-02-17 16:50:53.290 DEBUG 11636 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : POST "/upload-image/5", parameters={multipart}
+2025-02-17 16:50:53.389 DEBUG 11735 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.UploadDownloadController#uploadImage(long, MultipartFile)
+2025-02-17 16:50:53.498 DEBUG 11844 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-17 16:50:53.620 DEBUG 11966 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.entities.Product@669f8730]
+2025-02-17 16:50:53.661 DEBUG 12007 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 16:51:38.594 INFO  56940 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 16:51:38.617 INFO  56963 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 16:59:11.741 INFO  1842  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 7524 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 16:59:11.752 INFO  1853  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 16:59:14.665 INFO  4766  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 16:59:14.696 INFO  4797  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 16:59:14.698 INFO  4799  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 16:59:14.840 INFO  4941  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 16:59:14.841 INFO  4942  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2968 ms
+2025-02-17 16:59:15.365 INFO  5466  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 16:59:15.554 DEBUG 5655  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2025-02-17 16:59:15.703 DEBUG 5804  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 16:59:15.791 DEBUG 5892  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 16:59:15.944 DEBUG 6045  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 16:59:16.262 INFO  6363  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 16:59:16.290 INFO  6391  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.503 seconds (process running for 6.811)
+2025-02-17 16:59:30.146 INFO  20247 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 16:59:30.146 INFO  20247 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 16:59:30.147 DEBUG 20248 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 16:59:30.147 DEBUG 20248 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 16:59:30.147 DEBUG 20248 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 16:59:30.149 DEBUG 20250 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3940efc
+2025-02-17 16:59:30.152 DEBUG 20253 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1e625113
+2025-02-17 16:59:30.152 DEBUG 20253 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 16:59:30.152 INFO  20253 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2025-02-17 16:59:30.170 DEBUG 20271 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/image/5", parameters={multipart}
+2025-02-17 16:59:30.293 DEBUG 20394 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.UploadDownloadController#getProductImage(long)
+2025-02-17 16:59:30.520 DEBUG 20621 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [*/*, application/json, application/*+json, application/yaml]
+2025-02-17 16:59:30.524 DEBUG 20625 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/5-dell.jpg]]
+2025-02-17 16:59:30.544 DEBUG 20645 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 17:01:05.706 INFO  115807 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 17:01:05.724 INFO  115825 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-17 17:01:11.593 INFO  1845  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 7156 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-17 17:01:11.610 INFO  1862  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-17 17:01:14.394 INFO  4646  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-17 17:01:14.431 INFO  4683  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-17 17:01:14.431 INFO  4683  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-17 17:01:14.551 INFO  4803  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-17 17:01:14.553 INFO  4805  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2807 ms
+2025-02-17 17:01:15.156 INFO  5408  --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-17 17:01:15.303 DEBUG 5555  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2025-02-17 17:01:15.370 DEBUG 5622  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-17 17:01:15.454 DEBUG 5706  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-17 17:01:15.678 DEBUG 5930  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-17 17:01:15.967 INFO  6219  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-17 17:01:15.995 INFO  6247  --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 5.344 seconds (process running for 6.656)
+2025-02-17 17:01:23.352 INFO  13604 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17 17:01:23.353 INFO  13605 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-17 17:01:23.353 DEBUG 13605 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-17 17:01:23.353 DEBUG 13605 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-17 17:01:23.354 DEBUG 13606 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-17 17:01:23.355 DEBUG 13607 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d464005
+2025-02-17 17:01:23.356 DEBUG 13608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@348bc535
+2025-02-17 17:01:23.357 DEBUG 13609 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-17 17:01:23.358 INFO  13610 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2025-02-17 17:01:23.384 DEBUG 13636 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : GET "/image/5", parameters={multipart}
+2025-02-17 17:01:23.481 DEBUG 13733 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.UploadDownloadController#getProductImage(long)
+2025-02-17 17:01:23.590 DEBUG 13842 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-17 17:01:23.593 DEBUG 13845 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/5-dell.jpg]]
+2025-02-17 17:01:23.703 DEBUG 13955 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 17:01:38.407 DEBUG 28659 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/image/5", parameters={}
+2025-02-17 17:01:38.410 DEBUG 28662 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.UploadDownloadController#getProductImage(long)
+2025-02-17 17:01:38.414 DEBUG 28666 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-17 17:01:38.416 DEBUG 28668 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/5-dell.jpg]]
+2025-02-17 17:01:38.419 DEBUG 28671 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-17 17:06:15.477 INFO  305729 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-17 17:06:15.497 INFO  305749 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
