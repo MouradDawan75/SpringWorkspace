@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"
 xmlns:th="http://www.thymeleaf.org"
-
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/main-layout"
 >
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,7 @@ xmlns:th="http://www.thymeleaf.org"
     <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}">
 </head>
 <body>
+<div layout:fragment="content">
 <div class="container">
 <h2>Attributs Thymeleaf</h2>
 <br/>
@@ -134,7 +136,7 @@ xmlns:th="http://www.thymeleaf.org"
     <br/><br/>
     <h3>Validation de formulaires</h3>
     <br/>
-    <p>Ajoutez la dépendance spring-starter-validation dans le pom.xml</p>
+    <p>Ajoutez la dépendance spring-boot-starter-validation dans le pom.xml</p>
     <form th:action="@{/thymeleafValidation}" method="post" th:object="${playerForm}">
 
         Name: <input type="text" th:field="*{name}"/><br/>
@@ -155,8 +157,24 @@ xmlns:th="http://www.thymeleaf.org"
         <p>Formulaire valide......</p>
     </div>
 
-</div>
+    <br/>
+    <h3>Expression de fragments</h3>
+    <br/>
+    <div th:replace="~{shared/header::header}"></div>
+    <div>
+        Contenu de la page
+    </div>
+    <div th:replace="~{shared/footer::footer}"></div>
+    <br/>
+    <h3>Thymeleaf layouts</h3>
+    <br/>
+    Permet de créer des pages de disposition (Master page). Pratique pour définir des menus de navigations.
+    Ajoutez la dépendance suivante dans le pom.xml:<br/>
+    thymeleaf-layout-dialect
 
+
+</div>
+</div>
 <br/><br/>
 </body>
 </html>

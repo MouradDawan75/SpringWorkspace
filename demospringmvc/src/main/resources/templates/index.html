@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/main-layout"
+>
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
 </head>
 <body>
+
+<div layout:fragment="content">
+
+    <div class="container">
 <h3>Page d'accueil</h3>
 <br/><br/>
 <p>
@@ -31,5 +39,7 @@
     ~{..}: pour les expressions de fragments<br/>
 </p>
 <a href="/thymeleaf">Thymeleaf attributs</a>
+</div>
+</div>
 </body>
 </html>
