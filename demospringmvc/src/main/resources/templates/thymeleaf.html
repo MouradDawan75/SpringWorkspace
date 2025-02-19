@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"
 xmlns:th="http://www.thymeleaf.org"
+
 >
 <head>
     <meta charset="UTF-8">
     <title>Thymeleaf</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}">
 </head>
 <body>
+<div class="container">
 <h2>Attributs Thymeleaf</h2>
 <br/>
 <p>Contenu du controller: <strong th:text="${message}"></strong></p>
@@ -29,5 +32,131 @@ xmlns:th="http://www.thymeleaf.org"
 <h3>Expressions d'URL</h3>
 <br/>
 <a th:href="@{/}">revenir à l'accueil</a>
+<br/>
+<h3>Boucle FOR:</h3>
+<br/>
+
+<table class="table table-dark table-striped-columns">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="p : ${players}">
+            <td th:text="${p.name}">vide</td>
+            <td th:text="${p.role}">vide</td>
+        </tr>
+    </tbody>
+</table>
+    <br/>
+    <h3>Condition IF/Unless:</h3>
+    <br/>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${players}">
+            <td th:text="${p.name}">vide</td>
+            <td>
+                <a class="btn btn-primary" th:if="${p.role} == 'Admin'">Update</a>
+                <a class="btn btn-danger" th:if="${p.role} == 'Admin'">Delete</a>
+                <a class="btn btn-warning" th:unless="${p.role} == 'Admin'">View</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+<br/>
+    <h3>Condition switch/case</h3>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <h4 th:text="${player.name}"></h4>
+            <div th:switch="${player.role}">
+                <p th:case = "Admin">User is admin</p>
+                <p th:case = "Manager">User is manager</p>
+                <!-- case='*'   le case defaut-->
+                <p th:case="*"> Other role</p>
+
+            </div>
+        </div>
+    </div>
+    <br/>
+<h3>Dropdown List</h3>
+<br/>
+    <h4>Exemple basic</h4>
+    <br/>
+    <br/>
+    <select>
+        <option value="pomme">Pomme</option>
+        <option value="banane">Banane</option>
+        <option value="poire">Poire</option>
+    </select>
+    <br/>
+    <br/>
+    <h4>Liste fournie par le controller</h4>
+    <br/>
+
+    <select>
+        <option value="0">-- Select option --</option>
+        <option th:each="option : ${options}" th:value="${option}" th:text="${option}"></option>
+
+    </select>
+    <br/>
+    <br/>
+    <h4>dropdown list à partir d'une enum</h4>
+    <br/>
+
+    <select name="color">
+        <option th:each="clr : ${T(fr.dawan.demospringmvc.Color).values()}" th:value="${clr}" th:text="${clr}"></option>
+    </select>
+    <br/><br/>
+
+    <h3>Envoi de formulaire</h3>
+    <br/>
+    <form th:action="@{/thymeleaf}" method="post">
+        Name: <input type="text" name="nom"/>
+        Rôle: <input type="text" name="role">
+        <input type="submit" value="envoyer" class="btn btn-primary">
+    </form>
+    <br/>
+    <div th:if="${formOK}">
+        <span th:text="${nom}"></span>
+        <span th:text="${role}"></span>
+
+    </div>
+    <br/><br/>
+    <h3>Validation de formulaires</h3>
+    <br/>
+    <p>Ajoutez la dépendance spring-starter-validation dans le pom.xml</p>
+    <form th:action="@{/thymeleafValidation}" method="post" th:object="${playerForm}">
+
+        Name: <input type="text" th:field="*{name}"/><br/>
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+        Role: <input type="text" th:field="*{role}"/><br/>
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('role')}" th:errors="*{role}"></div>
+        Age: <input type="text" th:field="*{age}"/><br/>
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></div>
+        Size: <input type="text" th:field="*{size}"/><br/>
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('size')}" th:errors="*{size}"></div>
+        Tél.:: <input type="text" th:field="*{tel}"/><br/>
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('tel')}" th:errors="*{tel}"></div>
+        <br/>
+        <input type="submit" value="envoyer" class="btn btn-primary">
+    </form>
+    <br/>
+    <div th:if="${formValide}">
+        <p>Formulaire valide......</p>
+    </div>
+
+</div>
+
+<br/><br/>
 </body>
 </html>
