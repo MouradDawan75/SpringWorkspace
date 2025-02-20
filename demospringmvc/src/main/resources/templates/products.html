@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/main-layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <br/><br/>
+    <div class="container">
+<h3>Liste des produits</h3>
+<br/><br/>
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width:450px; margin: 5px; padding: 10px; background-color: orange; border:solid">
+                <div class="card-title">
+                    <h4>Rechercher:</h4>
+                </div>
+                <form th:action="@{/products/findByKey}" method="get">
+                    <input type="text" name="motcle" class="form-control"><br/>
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="col" style="border: solid 10px">
+            <form th:action="@{/products/addProduct}" method="post" th:object="${productForm}">
+
+                Id:<input type="text" th:field="*{id}" readonly="readonly" class="form-control">
+
+                Description:<input type="text" th:field="*{description}" class="form-control">
+                <div class="alert alert-warning" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></div>
+
+                Price:<input type="text" th:field="*{price}" class="form-control">
+                <div class="alert alert-warning" th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></div>
+
+                Quantity:<input type="text" th:field="*{quantity}" class="form-control">
+                <div class="alert alert-warning" th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}"></div><br/>
+                <button class="btn btn-primary" type="submit">Valider</button><br/><br/>
+
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
+
+
+        <br/><br/>
+        <div class="container">
+        <table class="table table-hover">
+            <tr>
+                <th>Id</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+            <tr th:each="p : ${products}">
+                <td th:text="${p.id}"></td>
+                <td th:text="${p.description}"></td>
+                <td th:text="${p.price}"></td>
+                <td>
+                    <a th:href="@{/products/moins/{id} (id = ${p.id})}" class="btn btn-dark">-</a>
+                    <span th:text="${p.quantity}"></span>
+                    <a th:href="@{/products/plus/{id} (id = ${p.id})}" class="btn btn-dark">+</a>
+                </td>
+                <td>
+                    <a th:href="@{/products/delete/{id} (id=${p.id})}" class="btn btn-danger" onclick="return confirm('Are you sur?')">Delete</a>
+                    <a th:href="@{/products/update/{id} (id=${p.id})}" class="btn btn-warning">Update</a>
+                </td>
+
+            </tr>
+
+        </table>
+        </div>
+</div>
+</div>
+
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>

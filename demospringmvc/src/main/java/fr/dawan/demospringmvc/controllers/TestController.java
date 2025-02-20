@@ -54,7 +54,7 @@ public class TestController {
         Player player = new Player("Patrice", "RH");
         model.addAttribute("player", player);
 
-        //liste pour la bouce FOR
+        //liste pour la boucle FOR
         List<Player> players = new ArrayList<>();
         players.add(new Player("Thomas", "Admin"));
         players.add(new Player("Marie", "Manager"));
@@ -92,7 +92,7 @@ public class TestController {
 
         if(bindingResult.hasErrors()){
 
-            //for invalide
+            //form invalide
 
             return thymeleaf(model);
         }
