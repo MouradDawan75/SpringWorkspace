@@ -17,6 +17,8 @@ public class Product implements Serializable {
     private double price;
     private int quantity;
 
+
+
     public long getId() {
         return id;
     }

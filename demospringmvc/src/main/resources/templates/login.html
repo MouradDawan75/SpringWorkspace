@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card p-4 shadow" style="width: 22rem;">
+        <h3 class="text-center mb-3">Sign In</h3>
+
+        <form th:action="@{/authenticate}" method="post">
+            <div class="mb-3">
+            <label for="username" class="form-label">User Name:</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+
+        </form>
+<div class="text-center mt-3">
+    <small>Don't have account? <a th:href="@{/create-account}">Create account</a></small>
+</div>
+        <div th:if="${erreur}" th:text="${erreur}" style="color:red;font-style:italic;">
+
+        </div>
+
+
+</div>
+</div>
+</body>
+</html>

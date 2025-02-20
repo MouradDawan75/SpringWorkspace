@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<div class="container">
 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">Spring MVC</a>
@@ -24,14 +25,52 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="/contact">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link text-dark" href="/products/display">Gestion Produits</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/utilisateurs/display">Gestion Utilisateurs</a>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav" th:if="${session.user == null}">
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary me-2" href="/create-account">Create Account</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="/login">Login</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav" th:unless="${session.user == null}">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span th:text="${session.username}"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+
+                    </ul>
+                </li>&nbsp;&nbsp;
+
+
+                <li class="nav-item">
+                    <a class="btn btn-danger" href="/logout">Logout</a>
+                </li>
             </ul>
 
         </div>
     </div>
 </nav>
+</div>
 <div class="container">
     <div layout:fragment="content">
 
@@ -41,6 +80,6 @@
 
 
 
-<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

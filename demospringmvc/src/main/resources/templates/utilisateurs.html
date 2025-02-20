@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/main-layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Utiisateurs</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <br/><br/>
+    <div class="container">
+<h3>Liste des utilisateurs</h3>
+
+
+        <br/><br/>
+        <div class="container">
+        <table class="table table-hover">
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Admin</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+            <tr th:each="u : ${users}">
+                <td th:text="${u.username}"></td>
+                <td th:text="${u.password}"></td>
+                <td><input type="checkbox" th:checked="${u.admin}"></td>
+                <td>
+                    <img th:src="|data:image/jpeg;base64,${u.base64Image}" style="width: 45px; height: 45 px;"/>
+                </td>
+                <td>
+                    <a th:href="@{/utilisateurs/delete/{id} (id=${u.id})}" class="btn btn-danger" onclick="return confirm('Are you sur?')">Delete</a>
+                    <a th:href="@{/utilisateurs/update/{id} (id=${u.id})}" class="btn btn-warning">Update</a>
+                </td>
+
+            </tr>
+
+        </table>
+        </div>
+</div>
+</div>
+
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
