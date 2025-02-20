@@ -17,6 +17,11 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping(value ="/ex")
+    public String testException() throws Exception {
+        throw new Exception();
+    }
+
     @GetMapping(value = "/load")
     public String loadTestData() throws Exception{
 
