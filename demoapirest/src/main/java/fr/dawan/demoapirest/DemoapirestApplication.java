@@ -8,12 +8,38 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class DemoapirestApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoapirestApplication.class, args);
+
+	}
+
+	//Modification de la cong de Spring MVC pour la gestion des FRONT: CORS
+/*
+CORS: Cross Origine Resources Sharing
+ */
+	public WebMvcConfigurer getConfiguration(){
+
+		return new WebMvcConfigurer() {
+
+
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+
+				registry.addMapping("/**")
+						.allowedMethods("GET","POST","DELETE","PUT")
+						//.allowedOrigins("*") - accéssibles par tous les fronts
+						.allowedOrigins("http://localhost:4200", "http://localhost:4000");
+			}
+		};
+
+
 
 	}
 

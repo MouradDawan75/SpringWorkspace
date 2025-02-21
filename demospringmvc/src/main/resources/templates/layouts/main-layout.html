@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="/utilisateurs/display">Gestion Utilisateurs</a>
+                    <a class="nav-link text-dark" href="/utilisateurs/display" th:if="${session.admin}">Gestion Utilisateurs</a>
                 </li>
 
             </ul>
@@ -64,6 +64,10 @@
 
                 <li class="nav-item">
                     <a class="btn btn-danger" href="/logout">Logout</a>
+                </li>&nbsp;&nbsp;
+
+                <li class="nav-item">
+                    <img th:src="|data:image/jpeg;base64,${session.image}" style="width: 40px; height: 40px;"/>
                 </li>
             </ul>
 

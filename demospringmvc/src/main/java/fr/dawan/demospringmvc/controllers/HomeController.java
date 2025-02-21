@@ -2,11 +2,15 @@ package fr.dawan.demospringmvc.controllers;
 
 import fr.dawan.demospringmvc.entities.Product;
 import fr.dawan.demospringmvc.entities.Utilisateur;
+import fr.dawan.demospringmvc.services.IEmailService;
 import fr.dawan.demospringmvc.services.IProductService;
 import fr.dawan.demospringmvc.services.IUtilisateurService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -17,6 +21,9 @@ public class HomeController {
     @Autowired
     private IUtilisateurService utilisateurService;
 
+    @Autowired
+    private IEmailService emailService;
+
     @GetMapping(value = {"","/"})
     public String accueil(){
         return "index";
@@ -25,6 +32,27 @@ public class HomeController {
     @GetMapping(value ="/ex")
     public String testException() throws Exception {
         throw new Exception();
+    }
+
+    @GetMapping(value ="/unauthorized")
+    public String unauthorized() throws Exception {
+        return "unauthorized";
+    }
+
+    //Méthode d'envoi de mails
+
+    @GetMapping("/contact")
+    public String contactUs(){
+        return "contact";
+    }
+
+    @PostMapping("/contact-us")
+    public String contactPost(@RequestParam("email") String email, @RequestParam("sujet") String sujet,
+                              @RequestParam("message") String message, Model model) throws Exception{
+        emailService.sendEmail(sujet,message,email);
+        model.addAttribute("success", true);
+
+        return "contact";
     }
 
     @GetMapping(value = "/load")

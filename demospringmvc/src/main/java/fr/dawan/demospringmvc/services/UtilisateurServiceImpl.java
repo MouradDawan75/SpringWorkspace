@@ -69,6 +69,12 @@ public class UtilisateurServiceImpl implements IUtilisateurService{
         Utilisateur user = utilisateurRepository.findByUsername(username);
         if(user != null && encoder.matches(password, user.getPassword())){
             //encode photo en base 64
+
+            byte[] encoded64 = Base64.getEncoder().encode(user.getPhoto());
+            String strBase64 = new String(encoded64, "utf-8");
+            user.setBase64Image(strBase64);
+
+
             return user;
         }
 

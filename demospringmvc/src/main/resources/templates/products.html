@@ -32,7 +32,7 @@
 
         </div>
 
-        <div class="col" style="border: solid 10px">
+        <div class="col" style="border: solid 10px" th:if="${session.admin}">
             <form th:action="@{/products/addProduct}" method="post" th:object="${productForm}">
 
                 Id:<input type="text" th:field="*{id}" readonly="readonly" class="form-control">
@@ -67,20 +67,20 @@
                 <th>Description</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Action</th>
+                <th th:if="${session.admin}">Action</th>
             </tr>
             <tr th:each="p : ${products}">
                 <td th:text="${p.id}"></td>
                 <td th:text="${p.description}"></td>
                 <td th:text="${p.price}"></td>
                 <td>
-                    <a th:href="@{/products/moins/{id} (id = ${p.id})}" class="btn btn-dark">-</a>
+                    <a th:href="@{/products/moins/{id} (id = ${p.id})}" class="btn btn-dark" th:if="${session.admin}">-</a>
                     <span th:text="${p.quantity}"></span>
-                    <a th:href="@{/products/plus/{id} (id = ${p.id})}" class="btn btn-dark">+</a>
+                    <a th:href="@{/products/plus/{id} (id = ${p.id})}" class="btn btn-dark" th:if="${session.admin}">+</a>
                 </td>
                 <td>
-                    <a th:href="@{/products/delete/{id} (id=${p.id})}" class="btn btn-danger" onclick="return confirm('Are you sur?')">Delete</a>
-                    <a th:href="@{/products/update/{id} (id=${p.id})}" class="btn btn-warning">Update</a>
+                    <a th:href="@{/products/delete/{id} (id=${p.id})}" th:if="${session.admin}" class="btn btn-danger" onclick="return confirm('Are you sur?')">Delete</a>
+                    <a th:href="@{/products/update/{id} (id=${p.id})}" class="btn btn-warning" th:if="${session.admin}">Update</a>
                 </td>
 
             </tr>
